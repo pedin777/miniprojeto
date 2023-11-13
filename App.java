@@ -3,6 +3,9 @@ import java.util.Scanner;
 class Livro_interativo {
     public static void main(String[] args) throws Exception {
         
+        Personagem pedro = new Personagem("Pedro");
+        Personagem victor = new Personagem("Victor");
+
         System.out.println("Oi,você pode fazer parte do livro interativo,\n" +
                 "me ajudando a construir uma historia.\n" +
                 "\nVamos lá?  - sim - nao\n");
@@ -34,7 +37,7 @@ class Livro_interativo {
                     "\n Seu time segurou o resultado e acabou o jogo,\n" +
                     "\n vocês foram campeões com seu gol de falta.\n");
             System.out.println("Fim da Historia");
-            
+            pedro.alterarEnergia( 11);
 
 
         } 
@@ -61,7 +64,7 @@ class Livro_interativo {
                         "\n você fez o gol nos penaltis mais 2 de seus companheiros\n" +
                         "\n perderam os penaltis e seu time não foi campeão." );
                         System.out.println("Fim da Historia");
-                        
+                        pedro.alterarEnergia( 9);
                         
                     }else if (choises2.equalsIgnoreCase("2")) {
                         System.out.println(
@@ -69,7 +72,7 @@ class Livro_interativo {
                             "\nbateu na direita,o goleiro ficou parado no meio\n"+
                             "\ne foi gol.O jogo acabou 1x0 e seu time foi campeão." );
                             System.out.println("Fim da Historia");
-                            
+                            victor.alterarEnergia( 11);
 
 
                     }
